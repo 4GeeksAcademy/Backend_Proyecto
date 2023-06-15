@@ -28,7 +28,7 @@ class User(db.Model):
     
 class Muestra(db.Model):
     id = db.Column(db.Integer, primary_key=True)    
-    project_name = db.Column(db.string(150), unique=False, nullable=False)
+    project_name = db.Column(db.String(150), unique=False, nullable=False)
     ubication = db.Column(db.String(120), unique=False, nullable=False)
     ubication_image = db.Column(db.String(120), unique=False, nullable=False)
     area = db.Column(db.String(80), unique=False, nullable=False)
